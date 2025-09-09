@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Estado</title>
+  <link rel="stylesheet" href="css/consulta.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="admin.html">Inicio</a></li>
+      <li><a href="ingreso.html">Ingreso de Siniestro</a></li>
+      <li><a href="consulta.html" class="active">Consulta de Estado</a></li>
+      <li><a href="reporte.html">Reportes</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Consulta de Siniestro</h1>
+    <p>Ingrese su RUT y número de póliza para consultar la información de su siniestro.</p>
+
+    <form id="form-consulta">
+      <input type="text" id="rutConsulta" placeholder="RUT" required>
+      <input type="text" id="polizaConsulta" placeholder="Número de Póliza" required>
+      <button type="submit" class="btn-primario">Consultar</button>
+    </form>
+
+    <div id="resultado" class="detalle" style="display:none; margin-top:20px;">
+      <h2>Información del Siniestro</h2>
+      <div class="detalle-item"><strong>RUT:</strong> <span id="resRut"></span></div>
+      <div class="detalle-item"><strong>N° Póliza:</strong> <span id="resPoliza"></span></div>
+      <div class="detalle-item"><strong>Tipo de Daño:</strong> <span id="resDanio"></span></div>
+      <div class="detalle-item"><strong>Vehículo:</strong> <span id="resVehiculo"></span></div>
+      <div class="detalle-item"><strong>Email:</strong> <span id="resEmail"></span></div>
+      <div class="detalle-item"><strong>Teléfono:</strong> <span id="resTelefono"></span></div>
+      <div class="detalle-item"><strong>Patente:</strong> <span id="resPatente"></span></div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/siniestro.js"></script>
+  <script src ="js/consulta.js"></script>
+
+
+</body>
+</html>

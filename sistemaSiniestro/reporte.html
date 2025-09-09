@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reportes</title>
+  <link rel="stylesheet" href="css/reporte.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="admin.html">Inicio</a></li>
+      <li><a href="ingreso.html">Ingreso de Siniestro</a></li>
+      <li><a href="consulta.html">Consulta de Estado</a></li>
+      <li><a href="reporte.html" class="active">Reportes</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Reportes y Estadísticas</h1>
+
+    <div class="dashboard">
+      <div class="chart-container">
+        <h3>Estados de los Siniestros</h3>
+        <canvas id="chartEstados"></canvas>
+      </div>
+
+      <div class="chart-container">
+        <h3>Tipos de Daño</h3>
+        <canvas id="chartTipos"></canvas>
+      </div>
+
+      <div class="chart-container">
+        <h3>Siniestros por Liquidador</h3>
+        <canvas id="chartLiquidadores"></canvas>
+      </div>
+
+      <div class="chart-container">
+        <h3>Siniestros Recientes (Últimos 5)</h3>
+        <ul id="listaRecientes"></ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/siniestro.js"></script>
+  <script src="js/reporte.js"></script>
+</body>
+</html>
